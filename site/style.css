@@ -14,6 +14,16 @@ body {
 .header img {
   padding-top: 32.5px;
   margin-left: 140px;
+  height:auto;
+}
+
+@media screen and (max-width: 500px) {
+  .header img {
+    display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 40%;
+  }
 }
 
 .header a {
