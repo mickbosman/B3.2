@@ -26,7 +26,7 @@ $("#form__field--password").on('input', function() {
         $(".form__field--password").addClass('form__field--success');
         $(".form__field--password").removeClass('form__field--error');
     }
-})
+});
 
 $("#form__field--password_confirm").on('input', function() {
     if(this.value.length == 0) {
@@ -39,7 +39,7 @@ $("#form__field--password_confirm").on('input', function() {
         $(".form__field--password_confirm").addClass('form__field--success');
         $(".form__field--password_confirm").removeClass('form__field--error');
     }
-})
+});
 
 $("#form__field--name").on('input', function() {
     if(this.value.length == 0) {
@@ -52,4 +52,13 @@ $("#form__field--name").on('input', function() {
         $(".form__field--name").addClass('form__field--success');
         $(".form__field--name").removeClass('form__field--error');
     }
-})
+});
+
+window.closeMenu = function() {
+    var menu = document.getElementById('navigation');
+    menu.style.transform = "translateX(-100%)"
+}
+window.openMenu = function() {
+    var menu = document.getElementById('navigation');
+    menu.style.transform = "translateX(0%)"
+}
