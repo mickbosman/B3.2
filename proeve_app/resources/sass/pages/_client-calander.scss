@@ -88,6 +88,17 @@
                 padding: 12.5px 0;
                 border-right: 1px solid #707070;
             }
+            .col__activities {
+                .activities__activity {
+                    background-color: $primary;
+                    color: #FFF;
+                    padding: 7px 8px;
+                    margin-left: 5px;
+                    border-radius: 8px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
