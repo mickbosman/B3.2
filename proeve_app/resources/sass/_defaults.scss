@@ -24,6 +24,17 @@ img {
     padding: 10px 45px;
 }
 
+.feedback {
+    text-align: center;
+
+    &--valid p {
+        color: $secondary !important;
+    }
+    &--invalid p {
+        color: $primary !important;
+    }
+}
+
 .form__field {
     background-color: #FFF;
     margin: 15px;
@@ -100,4 +111,5 @@ img {
     display: block;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }

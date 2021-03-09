@@ -109,6 +109,16 @@ img {
   padding: 10px 45px;
 }
 
+.feedback {
+  text-align: center;
+}
+.feedback--valid p {
+  color: #63B286 !important;
+}
+.feedback--invalid p {
+  color: #DD195B !important;
+}
+
 .form__field {
   background-color: #FFF;
   margin: 15px;
@@ -184,8 +194,9 @@ img {
   display: block;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .screen__front .head .head__image {
-  margin: 135px auto 80px auto;
+  margin: 115px auto 80px auto;
 }
