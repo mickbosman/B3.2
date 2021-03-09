@@ -36,7 +36,7 @@ $previous_day = Carbon::parse($selected_date)->subDay();
         <div class="monitor__profile">
             <img src="/assets/user_white.svg" alt="" class="profile__picture">
             <div class="profile__details">
-                <p class="details__name">{{auth()->user()->current_client->firstname}} {{auth()->user()->current_client->lastname}}</p>
+                <p class="details__name">{{auth()->user()->name}}</p>
                 <div class="details__table details__table--email">
                     <span>Email:</span>
                     <span class="row__value table__row--lower">{{auth()->user()->email}}</span>
