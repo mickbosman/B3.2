@@ -1,0 +1,104 @@
+.screen__client-calander {
+    background-color: #FFF;
+
+    .header {
+        padding: 35px 20px 0 20px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 25px;
+        
+        .hamburger-menu {
+            height: 28px;
+            width: 28px;
+            margin: 2.5px 0;
+            img {
+                height: 28px;
+                width: 28px;
+                object-fit: contain;
+            }
+        }
+        .screen__title {
+            font-size: 22px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .calander {
+            height: 28px;
+            width: 28px;
+            margin: 2.5px 0;
+            img {
+                height: 28px;
+                width: 28px;
+                object-fit: contain;
+            }
+        }
+    }
+    .navigator {
+        background-color: $secondary;
+
+        .navigator__navigation {
+            margin: 15px auto;
+            width: 175px;
+            display: grid;
+            grid-template-columns: 27px auto 27px;
+            padding: 17px;
+
+            .arrow {
+                margin: 0 auto;
+                height: 27px;
+                width: 27px;
+                margin: 3px 0;
+
+                img {
+                    height: 27px;
+                    width: 27px;
+                    object-fit: contain;
+                }
+            }
+            .arrow--left img {
+                transform: rotate(180deg);
+            }
+            .calander-day {
+                font-size: 22px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #FFF;
+            }
+        }
+    }
+    .content {
+
+        .calander-table {
+            border-collapse: collapse;
+            width: 100%;
+
+            .row__current {
+                background-color: $secondary;
+                td {
+                    color: #FFF;
+                }
+            }
+            td {
+                border-bottom: 1px solid #D0D0D0;
+                border-top: 1px solid #D0D0D0;
+            }
+            .col__time {
+                font-size: 15px;
+                text-align: center;
+                padding: 12.5px 0;
+                border-right: 1px solid #707070;
+            }
+            .col__activities {
+                .activities__activity {
+                    background-color: $primary;
+                    color: #FFF;
+                    padding: 7px 8px;
+                    margin-left: 5px;
+                    border-radius: 8px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
