@@ -62,3 +62,24 @@ window.openMenu = function() {
     var menu = document.getElementById('navigation');
     menu.style.transform = "translateX(0%)"
 }
+
+window.closeModal = function() {
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.style.display = "none";
+    });
+}
+
+window.openModal = function(name, description, begin, end, audio_src, video_src, icon_src) {
+    console.log('open');
+
+    var modal = document.getElementById('activity-modal');
+
+    modal.querySelector('#modal-icon').src = icon_src;
+    modal.querySelector('#modal-title').innerHTML = name;
+    modal.querySelector('#modal-description').innerHTML = description;
+    modal.querySelector('#modal-period').innerHTML = "From " + begin + " to " + end;
+  
+
+    modal.style.display = "block";
+}
