@@ -1,0 +1,25 @@
+name: robin_assistant
+description: "Robin Assistant is a new assistive software solution for people with special needs and their carers in performing everyday activities."
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  webview_flutter: ^1.0.7
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.8.1"
+
+flutter:
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon-310x310.png"
