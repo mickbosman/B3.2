@@ -463,3 +463,79 @@ img {
   text-transform: uppercase;
   cursor: pointer;
 }
+.screen__client-calander .content .modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(118, 118, 118, 0.3);
+  display: none;
+}
+.screen__client-calander .content .modal .modal-box {
+  position: sticky;
+  background-color: #FFF;
+  margin: 20px;
+  top: 25vh;
+  border-radius: 32px;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+.screen__client-calander .content .modal .modal-box .modal-head {
+  display: grid;
+  grid-template-columns: 34px auto 34px;
+  grid-gap: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #63B286;
+}
+.screen__client-calander .content .modal .modal-box .modal-head--no_bottom {
+  margin-bottom: 0;
+}
+.screen__client-calander .content .modal .modal-box .modal-head .head__title {
+  color: #DD195B;
+  font-size: 18px;
+  line-height: 34px;
+}
+.screen__client-calander .content .modal .modal-box .modal-head .head__title-close_btn {
+  height: 34px;
+  width: 34px;
+}
+.screen__client-calander .content .modal .modal-box .modal-head .head__title-close_btn img {
+  height: 22px;
+  width: 22px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 6px 0;
+  float: right;
+}
+.screen__client-calander .content .modal .modal-box .modal-content .content__video {
+  width: 100%;
+  border: solid 1px #DD195B;
+  border-radius: 5px;
+}
+.screen__client-calander .content .modal .modal-box .modal-content .content__grid {
+  display: grid;
+  grid-template-columns: 49px auto;
+  grid-gap: 15px;
+}
+.screen__client-calander .content .modal .modal-box .modal-content .content__grid .grid__actions {
+  border-right: solid 1px #63B286;
+  padding-top: 15px;
+}
+.screen__client-calander .content .modal .modal-box .modal-content .content__grid .grid__actions .modal-action_btn {
+  border: solid 1px #DD195B;
+  border-radius: 5px;
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.screen__client-calander .content .modal .modal-box .modal-content .content__grid .grid__details {
+  padding-top: 15px;
+}
+.screen__client-calander .content .modal .modal-box .modal-content .content__grid .grid__details .details__description {
+  margin-top: 20px;
+}
