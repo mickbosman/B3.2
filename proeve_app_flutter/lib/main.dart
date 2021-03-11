@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
           child: WebView(
-              initialUrl: 'http://192.168.0.101:8080',
+              initialUrl: 'https://proeve.joshua-server.nl',
               javascriptMode: JavascriptMode.unrestricted,
               userAgent: "Robin-Assistant-App",
               debuggingEnabled: false)),
