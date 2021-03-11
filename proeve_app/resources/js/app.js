@@ -70,9 +70,13 @@ window.closeModal = function() {
     });
 }
 
-window.openModal = function(name, description, begin, end, audio_src, video_src, icon_src) {
-    console.log('open');
+window.prevModal = function() {
+    closeModal();
+    var modal = document.getElementById('activity-modal');
+    modal.style.display = "block";
+}
 
+window.openModal = function(name, description, begin, end, audio_src, video_src, icon_src) {
     var modal = document.getElementById('activity-modal');
 
     modal.querySelector('#modal-icon').src = icon_src;
@@ -80,6 +84,32 @@ window.openModal = function(name, description, begin, end, audio_src, video_src,
     modal.querySelector('#modal-description').innerHTML = description;
     modal.querySelector('#modal-period').innerHTML = "From " + begin + " to " + end;
   
-
     modal.style.display = "block";
+
+    var view_button = document.getElementById('play-btn');
+    var listen_button = document.getElementById('listen-btn');
+
+    view_button.onclick = function() {
+        var video_modal = document.getElementById('video-modal');
+
+        video_modal.querySelector('#modal-icon').src = icon_src;
+        video_modal.querySelector('#modal-title').innerHTML = name;
+        video_modal.querySelector('#modal-video').src = video_src;
+
+        closeModal();
+        var modal = document.getElementById('video-modal');
+        modal.style.display = "block";
+    }
+
+    listen_button.onclick = function() {
+        var listen_modal = document.getElementById('listen-modal');
+
+        listen_modal.querySelector('#modal-icon').src = icon_src;
+        listen_modal.querySelector('#modal-title').innerHTML = name;
+        listen_modal.querySelector('#modal-audio').src = audio_src;
+
+        closeModal();
+        var modal = document.getElementById('listen-modal');
+        modal.style.display = "block";
+    }
 }

@@ -67,12 +67,24 @@ $previous_day = Carbon::parse($selected_date)->subDay();
         <div class="modal" id="video-modal">
             <div class="modal-box">
                 <div class="modal-head">
-                    <img src="/assets/bath_green.svg" id="modal-icon" alt="">
-                    <p class="head__title" id="modal-title">Bath</p>
-                    <a class="head__title-close_btn cursor-pointer" onclick="closeModal()"><img src="/assets/cross_primary.svg" alt=""></a>
+                    <img src="/assets/check_green.svg" id="modal-icon" alt="">
+                    <p class="head__title" id="modal-title">N/a</p>
+                    <a class="head__title-close_btn cursor-pointer" onclick="prevModal()"><img src="/assets/cross_primary.svg" alt=""></a>
                 </div>
                 <div class="modal-content">
-                    <video class="content__video" id="modal-video" src="https://www.w3schools.com/html/mov_bbb.mp4" controls controlsList="nodownload nofullscreen noremoteplayback"></video>
+                    <video class="content__video" id="modal-video" src="" controls controlsList="nodownload nofullscreen noremoteplayback"></video>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="listen-modal">
+            <div class="modal-box">
+                <div class="modal-head">
+                    <img src="/assets/check_green.svg" id="modal-icon" alt="">
+                    <p class="head__title" id="modal-title">N/a</p>
+                    <a class="head__title-close_btn cursor-pointer" onclick="prevModal()"><img src="/assets/cross_primary.svg" alt=""></a>
+                </div>
+                <div class="modal-content">
+                    <audio class="content__audio" id="modal-audio" src="" controls controlsList="nodownload"></audio>
                 </div>
             </div>
         </div>
@@ -86,8 +98,8 @@ $previous_day = Carbon::parse($selected_date)->subDay();
                 <div class="modal-content">
                     <div class="content__grid">
                         <div class="grid__actions">
-                            <a onclick="alert('listen')"><!-- TODO --><img src="/assets/sound_primary.svg" class="modal-action_btn modal-action_btn--listen" alt=""></a>
-                            <a onclick="alert('view')"><!-- TODO --><img src="/assets/play_primary.svg" class="modal-action_btn modal-action_btn--view" alt=""></a>
+                            <a id="listen-btn"><img src="/assets/sound_primary.svg" class="modal-action_btn modal-action_btn--listen" alt=""></a>
+                            <a id="play-btn"><img src="/assets/play_primary.svg" class="modal-action_btn modal-action_btn--view" alt=""></a>
                         </div>
                         <div class="grid__details">
                             <p class="details__period" id="modal-period">From 0:00 to 0:00</p>
@@ -108,7 +120,7 @@ $previous_day = Carbon::parse($selected_date)->subDay();
                         $date->setTime($i, 0);
                         ?>
                         @foreach ($client->hour_activities($date) as $activity)
-                            <a onclick="openModal('{{$activity->name}}', '{{$activity->description}}', '{{Carbon::parse($activity->begin_time)->format('H:i')}}', '{{Carbon::parse($activity->end_time)->format('H:i')}}', 'audio_src', 'video_src', '{{$activity->icon_src}}');"><span class="activities__activity">{{$activity->name}}</span></a>  
+                            <a onclick="openModal('{{$activity->name}}', '{{$activity->description}}', '{{Carbon::parse($activity->begin_time)->format('H:i')}}', '{{Carbon::parse($activity->end_time)->format('H:i')}}', '{{$activity->sound_src}}', '{{$activity->video_src}}', '{{$activity->icon_src}}');"><span class="activities__activity">{{$activity->name}}</span></a>  
                         @endforeach
                     </td>
                 </tr>
