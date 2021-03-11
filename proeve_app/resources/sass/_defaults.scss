@@ -13,13 +13,10 @@ img {
 }
 
 #app {
-    max-width: 375px;
-    min-width: 375px;
-    min-height: 812px;
+    min-height: 100vh;
     display: block;
     margin: 0 auto;
     background-color: $body-bg;
-    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.14);
     position: relative;
 }
 
@@ -159,4 +156,10 @@ img {
 
 .cursor-pointer {
     cursor: pointer !important;
+}
+
+input, button { // IOS styling fix
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
