@@ -82,7 +82,6 @@ body {
   position: absolute;
   height: 110%;
   top: 150px;
-
 }
 
 .add-person {
@@ -108,11 +107,11 @@ body {
 
 .person1 {
   margin-top: 10%;
-  font-size: 40px;
+  font-size: 30px;
   background-color: #ffffff;
   width: 100%;
   height: 77px;
-  padding-top: 18.5px;
+  padding-top: 25px;
   padding-left: 100px;
   padding-right: 0;
   font-family: gilroy;
@@ -121,11 +120,11 @@ body {
 
 .sitebar-kopjes {
   margin-top: 5px;
-  font-size: 40px;
+  font-size: 30px;
   background-color: #ffffff;
   width: 100%;
   height: 77px;
-  padding-top: 18.5px;
+  padding-top: 25px;
   padding-left: 100px;
   padding-right: 0;
   font-family: gilroy;
@@ -320,12 +319,23 @@ main {
   color: #363636;
 }
 
+.kopje-email {
+  margin-left: 10%;
+  padding-top: 15%;
+  font-size: 25px;
+  color: #363636;
+}
+
 .language {
   padding-top: 5%;
 }
 
 .naam {
-  padding-top: 5%;
+  padding-top: 3%;
+}
+
+.new-email {
+  padding-top: 10%;
 }
 
 
@@ -437,7 +447,39 @@ select {
 }
 
 .save-changes {
-  margin-top: 8%;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 75%;
+  background-color: #DB2663;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 19px;
+  cursor: pointer;
+}
+
+.change-email {
+  margin-top: 12%;
+  margin-left: 10%;
+  width: 75%;
+  background-color: #DB2663;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 19px;
+  cursor: pointer;
+}
+
+.change-email2 {
+  margin-top: 65%;
   margin-left: 10%;
   width: 75%;
   background-color: #DB2663;
@@ -484,7 +526,7 @@ select {
   cursor: pointer;
 }
 
-.white-box {
+.white-delete-box {
     background-color: white;
     color: #363636;
     position: absolute;
@@ -496,10 +538,124 @@ select {
     padding-left: 40px;
 }
 
-.white-box p {
+.white-delete-box p {
   font-size: 18px;
 }
 
-.white-box h2 {
+.white-delete-box h2 {
   color: #DB2663;
+}
+
+.primaire-carer {
+  margin-left: 10%;
+  padding-top: 8%;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+.send-mail-btn {
+margin-top: 8%;
+margin-left: 10%;
+width: 75%;
+background-color: #DB2663;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 19px;
+cursor: pointer;
+}
+
+#email-input {
+  font-family: gilroy;
+  color: black;
+  font-size: 24px;
+  padding-left: 3%;
+  height: 40px;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.carer-text {
+  margin-left: 10%;
+  padding-top: 7%;
+  color: #363636;
+  font-size: 23px;
+}
+
+.carer-kopje {
+  margin-left: 10%;
+  padding-top: 8%;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+.carer-text2 {
+  margin-left: 10%;
+  padding-top: 5%;
+  color: #363636;
+  font-size: 23px;
+}
+
+.person-1-activities {
+margin-top: 2%;
+margin-left: 21%;
+font-size: 40px;
+padding-top: 22.5px;
+margin-left: 23.5%;
+padding-right: 0;
+font-family: gilroy;
+color: #DB2663;
+}
+
+.white-box {
+  margin-top: 30px;
+  background-color: #ffffff;
+  width: 73.5%;
+  height: 600px;
+  margin-left: 23.5%;
+  border-right: 24px solid #63B286;
+  border-left: 24px solid #63B286;
+  border-top: 24px solid #63B286;
+}
+
+#search {
+  float: left;
+  font-family: gilroy;
+  color: black;
+  font-size: 24px;
+  padding-left: 1.5%;
+  height: 40px;
+  width: 42.5%;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+.add-activity-btn {
+  float: left;
+  margin-left: 5%;
+  width: 42.5%;
+  background-color: #DB2663;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 3.5%;
+}
+
+.green-stripe {
+  width: 90%;
+  height: 4px;
+  background-color: #63B286;
+  margin-top: 11%;
+  margin-left: 5%;
 }
