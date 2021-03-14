@@ -63,7 +63,7 @@
             }
         }
     }
-    .profile__title {
+    .profile__title, .panic__subtitle {
         color: $primary;
         font-size: 18px;
         text-transform: uppercase;
@@ -72,7 +72,36 @@
     .monitor__profile {
         margin-top: 10px;
     }
-    .btn--panic {
-        margin-top: 40px;
+    .panic__block {
+        position: relative;
+        .btn--panic {
+            margin-top: 40px;
+        }
+        .panic__alert {
+            background-color: #F2F2F2;
+            border-radius: 20px;
+            padding: 15px;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            display: none;
+    
+            .panic__subtitle {
+                text-align: center;
+                margin-top: 0;
+                border-bottom: solid 2px $secondary;
+                margin-bottom: 15px;
+            }
+            .panic__text {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .btn--panic {
+                margin-top: 0px;
+            }
+            .mb {
+                margin-bottom: 35px;
+            }
+        }
     }
 }

@@ -1,5 +1,11 @@
 const emailRegex = new RegExp(/^\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i);
 
+$(document).ready(function() {
+    setTimeout(function () {
+        notify();
+    }, 3000);
+});
+
 $("#form__field--email").on('input', function() {
     if(this.value.length == 0) {
         $(".form__field--email").removeClass('form__field--error');
@@ -68,12 +74,31 @@ window.closeModal = function() {
     modals.forEach(modal => {
         modal.style.display = "none";
     });
+
+    var video_modal = document.getElementById('video-modal');
+    video_modal.querySelector('#modal-video').pause();
+
+    var listen_modal = document.getElementById('listen-modal');
+    listen_modal.querySelector('#modal-audio').pause();
 }
 
 window.prevModal = function() {
     closeModal();
     var modal = document.getElementById('activity-modal');
     modal.style.display = "block";
+}
+
+window.showPanicBox = function() {
+    var elem = document.getElementById('panic-box');
+    elem.style.display = "block";
+}
+
+window.notify = function() {
+    document.getElementById('notification').style.top = 0;
+
+    setTimeout(function () {
+        document.getElementById('notification').style.top = "-100vh";
+    }, 3000);
 }
 
 window.openModal = function(name, description, begin, end, audio_src, video_src, icon_src) {

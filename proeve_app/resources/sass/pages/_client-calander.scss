@@ -1,6 +1,35 @@
 .screen__client-calander {
     background-color: #FFF;
 
+    .notification {
+        position: absolute;
+        background-color: #FFF;
+        margin: 15px;
+        border-radius: 26px;
+        padding: 20px;
+        width: calc(100% - 30px);
+        z-index: 99;
+        box-shadow: 1px 1px 1px 1px rgb(110, 110, 110);
+        top: -100vh;
+        transition: ease-out 1s top;
+
+        .notification__head {
+            display: grid;
+            grid-template-columns: 28px auto;
+            grid-gap: 10px;
+            margin-bottom: 10px;
+
+            .head__icon {
+                height: 28px;
+                width: 28px;
+            }
+            .head__text {
+                color: $primary;
+                line-height: 28px;
+                text-transform: uppercase;
+            }
+        }
+    }
     .header {
         padding: 35px 20px 0 20px;
         display: grid;
@@ -149,11 +178,13 @@
                 }
 
                 .modal-content {
-
                     .content__video {
                         width: 100%;
                         border: solid 1px $primary;
                         border-radius: 5px;
+                    }
+                    .content__audio {
+                        width: 100%;
                     }
                     .content__grid {
                         display: grid;

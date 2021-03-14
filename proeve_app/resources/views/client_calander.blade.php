@@ -16,6 +16,16 @@ $previous_day = Carbon::parse($selected_date)->subDay();
 @section('content')
 
 <div class="screen screen__client-calander">
+    <div class="notification" id="notification">
+        <div class="notification__head">
+            <img class="head__icon" src="/ms-icon-310x310.png" alt="">
+            <p class="head__text">Robin assists</p>
+        </div>
+        <div class="notification__content">
+            <p class="content__text">Time for this activity from 9:00 till 9:10. Make sure to do it!</p>
+        </div>
+    </div>
+
     <div class="navigation" id="navigation">
         <a class="close_btn cursor-pointer" onclick="closeMenu()"><img src="/assets/cross_primary.svg" alt=""></a>
         <div class="current_profile">
@@ -49,7 +59,16 @@ $previous_day = Carbon::parse($selected_date)->subDay();
                 @endif
             </div>
         </div>
-        <button class="btn btn--panic">Panic button</button>
+        <div class="panic__block">
+            <button class="btn btn--panic" id="panic-btn" onclick="showPanicBox()">Panic button</button>
+            <div class="panic__alert" id="panic-box">
+                <p class="panic__subtitle">Panic button</p>
+                <p class="panic__text">Call family:</p>
+                <button class="btn btn--panic mb">Call family</button>
+                <p class="panic__text">Call caretaker:</p>
+                <button class="btn btn--panic">Call caretaker</button>
+            </div>
+        </div>
     </div>
     <div class="header">
         <a class="hamburger-menu cursor-pointer" onclick="openMenu()"><img src="/assets/hamburger_primary.svg" alt=""></a>
