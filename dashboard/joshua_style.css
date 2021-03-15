@@ -302,3 +302,21 @@ img {
 .activity__planner .button--secondary {
     background-color: #63B286;
 }
+.activity__planner .block__head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: solid 2px #63B286;
+    padding-bottom: 15px;
+}
+.activity__planner .block__head .head__text {
+    line-height: 43px;
+    margin: 0;
+}
+.activity__planner .block__head .head__search {
+    height: 43px;
+    margin: 0;
+    padding: 5px 10px;
+}
+.activity__planner .block__head .head__search::placeholder {
+    color: #A3A3A3
+}
