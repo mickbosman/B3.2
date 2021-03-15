@@ -170,3 +170,47 @@ img {
     border-radius: 19px;
     padding: 5px 10px
 }
+
+
+.activity__planner {
+    margin-left: 15px;
+}
+.activity__planner .planner__head {
+    display: grid;
+    grid-template-columns: 350px 1fr 400px;
+    width: calc(100vw - 25vw - 45px);
+}
+.activity__planner .head__text {
+    color: #DB2663;
+    text-transform: uppercase;
+    display: block;
+    line-height: 40px;
+}
+.activity__planner .head__chart {
+    width: 100%;
+    display: block;
+    grid-column: 3;
+    margin: 20px 0;
+    height: 40px;
+}
+.activity__planner .planner__block {
+    border: solid 10px #63B286;
+    border-bottom: solid 10px #FFF;
+    width: calc(75vw - 93px);
+    height: calc(100% - 100px - 30px);
+    background-color: #FFF;
+    padding: 15px;
+}
+.activity__planner .block__text {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #63B286;
+    text-transform: uppercase;
+    color: #DB2663;
+}
+.activity__planner {
+    
+}
+.activity__planner {
+    
+}
