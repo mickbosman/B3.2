@@ -47,7 +47,7 @@ img {
 
 .content {
     display: grid;
-    grid-template-columns: 25vw 25vw auto;
+    grid-template-columns: 20vw 25vw auto;
     grid-gap: 10px;
 }
 
@@ -178,7 +178,7 @@ img {
 .activity__planner .planner__head {
     display: grid;
     grid-template-columns: 350px 1fr 400px;
-    width: calc(100vw - 25vw - 45px);
+    width: calc(100vw - 20vw - 45px);
 }
 .activity__planner .head__text {
     color: #DB2663;
@@ -196,7 +196,7 @@ img {
 .activity__planner .planner__block {
     border: solid 10px #63B286;
     border-bottom: solid 10px #FFF;
-    width: calc(75vw - 93px);
+    width: calc(80vw - 93px);
     height: calc(100% - 100px - 30px);
     background-color: #FFF;
     padding: 15px;
@@ -208,9 +208,97 @@ img {
     text-transform: uppercase;
     color: #DB2663;
 }
-.activity__planner {
-    
+.activity__planner .planner__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
 }
-.activity__planner {
-    
+.activity__planner .content__block {
+    border: solid 1px #63B286;
+    border-radius: 28px;
+    background-color: #63B286;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 6px 12px 6px 0px rgba(75,75,75,0.17);
+}
+.activity__planner .block__right {
+    background-color: #FFF;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+.activity__planner .left__head img {
+    height: 24px;
+    width: 24px;
+    float: right;
+    padding: 10px 10px 10px 5px;
+}
+.activity__planner .pink-checkmark {
+    background-color: #DB2663;
+    padding: 10px !important;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    transform: translate(-1px, -1px) !important;
+    float: left !important;
+}
+.activity__planner .left__body {
+    height: 125px;
+    width: 90%;
+    float: right;
+    margin: 25px 0;   
+}
+.activity__planner .left__body img {
+    height: 125px;
+    width: 100%;
+    object-fit: cover;
+}
+.activity__planner .block__right {
+    padding: 10px;
+}
+.activity__planner .block__right * {
+    margin: 0;
+}
+.activity__planner .setting__text, .activity__planner .task__title {
+    color: #DB2663;
+    text-transform: uppercase;
+}
+.activity__planner .right__head {
+    margin-bottom: 15px;
+}
+.activity__planner .task__title {
+    font-size: 16px;
+    display: inline-block;
+}
+.activity__planner .task__pos {
+    font-size: 24px;
+    color: #63B286;
+    display: inline-block;
+    float: right;
+}
+.activity__planner .right__setting {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    margin-bottom: 5px;
+}
+.activity__planner .task__title {
+    line-height: 31px;
+}
+.activity__planner [type=checkbox] {
+    height: 31px;
+    width: 31px;
+}
+.activity__planner .button {
+    min-width: 22vw;
+    border: none;
+    color: #FFF;
+    background-color: #707070;
+    padding: 10px;
+    border-radius: 23px;
+    margin-top: 25px;
+}
+.activity__planner .button--primary {
+    background-color: #DB2663;
+}
+.activity__planner .button--secondary {
+    background-color: #63B286;
 }
