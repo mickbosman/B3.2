@@ -1,0 +1,14 @@
+@import 'reset';
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    src: url('./fonts/gilroy-light.otf');
+    font-family: 'gilroy';
+}
+* {
+    font-family: 'gilroy';
+}
+
