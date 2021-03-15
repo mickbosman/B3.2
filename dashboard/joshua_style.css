@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-color: #F0F0F0;
+}
+@font-face {
+    src: url('./fonts/gilroy-light.otf');
+    font-family: 'gilroy';
+}
+* {
+    font-family: 'gilroy';
+    font-size: 20px;
+}
+img {
+    max-width: 100%;
+}
+
+.header {
+    background-color: #FFF;
+    text-transform: uppercase;
+    color: #707070;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-gap: 10px;
+    padding: 16px 140px;
+}
+.header img {
+    width: 83px;
+    height: 83px;
+    object-fit: contain;
+}
+.header .logo img {
+    width: 185px;
+    height: 83px;
+}
+.header .header-right {
+    display: grid;
+    grid-template-columns: 1fr 83px 83px;
+    grid-gap: 10px;
+}
+.header .header-right h1 {
+    line-height: 83px;
+    margin: 0;
+    text-align: right;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 25vw 25vw auto;
+    grid-gap: 10px;
+}
+
+.content .sidebar, .content .add-person-balk {
+    background-color: #63B286;
+}
+
+.content .sidebar-head {
+    background-color: #FFF;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 68px auto;
+    grid-gap: 10px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+
+.content .sidebar form input {
+    margin: 15px;
+    width: calc(100% - 55px);
+    padding: 5px 10px;
+}
+
+.content .sidebar form input::placeholder {
+    color: #A3A3A3
+}
+
+
+.add-person-balk, .sidebar {
+    min-height: calc(100vh - 120px);
+}
+
+.add-person-balk .add-person2 {
+    background-color: #FFF;
+    margin-top: 15px;
+    padding: 5px 35px;
+    text-transform: uppercase;
+    color: #DB2663;
+}
+
+.add-person-balk .person-content {
+    padding: 15px 35px;
+}
+
+.add-person-balk label {
+    text-transform: uppercase;
+}
+
+
+.add-person-balk input, .add-person-balk select {
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.add-person-balk input::placeholder {
+    color: #A3A3A3;
+}
+.add-person-balk select {
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.add-person-balk .button_list {
+    display: grid;
+    margin-bottom: 15px;
+}
+.add-person-balk .button_list-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.add-person-balk .button_list-5{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.add-person-balk .button_list button {
+    border: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-right: solid 1px #A3A3A3;
+}
+.add-person-balk .button_list .button-active {
+    color: #FFF;
+    background-color: #DB2663;
+}
+
+.add-person-balk .colors__color {
+    height: 35px;
+    width: 100%;
+}
+.add-person-balk .colors {
+    margin-bottom: 15px;
+}
+
+.add-person-balk .save-changes {
+    width: 100%;
+    background-color: #DB2663;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 19px;
+    padding: 5px 10px
+}
