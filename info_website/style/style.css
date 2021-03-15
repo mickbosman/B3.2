@@ -362,6 +362,11 @@ textarea {
 
 body, html {
   scroll-behavior: smooth;
+  text-align: center;
+}
+
+body {
+  background-color: #F0F0F0;
 }
 
 @font-face {
@@ -371,5 +376,139 @@ body, html {
 
 * {
   font-family: 'gilroy';
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  color: #FFF !important;
+  background-color: gray;
+  min-width: 220px;
+  padding: 13px 15px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.btn--primary {
+  background-color: #DD195B;
+}
+
+.btn--secondary {
+  background-color: #63B286;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  grid-gap: 15px;
+  line-height: 64px;
+  padding: 15px 90px;
+}
+
+.header .header__logo {
+  width: 125px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 64px;
+}
+
+.header .header__links a {
+  text-decoration: none;
+  color: #707070;
+  margin-right: 40px;
+}
+
+.header .header__links .link__flag {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 0;
+  border: solid 2px #63B286;
+}
+
+.info__block {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 15vh;
+}
+
+#hero {
+  background-image: url(/assets//office.jpg);
+}
+
+#hero h1 {
+  font-size: 64px;
+  color: #FFF;
+  letter-spacing: 1.2px;
+  padding-top: 25vh;
+}
+
+#hero .btn {
+  display: block;
+  margin: 10vh auto 0 auto;
+  width: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  color: #DD195B;
+  margin-bottom: 15px;
+}
+
+p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+#about .block__image {
+  background-image: url(/assets/person_with_phone.jpg);
+  height: 50vh;
+  margin-top: 15vh;
+}
+
+#about h2 {
+  padding-top: 15vh;
+}
+
+#blocks {
+  padding: 0 90px;
+}
+
+#blocks .blocks__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+#blocks .blocks__grid .grid__block {
+  background-color: #FFF;
+  border-radius: 72px;
+  padding: 50px 0;
+  -webkit-box-shadow: 6px 12px 6px 0px rgba(75, 75, 75, 0.17);
+          box-shadow: 6px 12px 6px 0px rgba(75, 75, 75, 0.17);
+}
+
+#blocks .blocks__grid .grid__block p {
+  margin: 0 25px;
+  width: calc(100% - 50px);
+}
+
+.mt {
+  margin-top: 15vh;
+}
+
+.mt-s {
+  margin-top: 10vh;
 }
 /*# sourceMappingURL=style.css.map */
