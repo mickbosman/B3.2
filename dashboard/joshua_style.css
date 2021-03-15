@@ -320,3 +320,29 @@ img {
 .activity__planner .block__head .head__search::placeholder {
     color: #A3A3A3
 }
+.activity__planner .block__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin-top: 15px;
+}
+.activity__planner .checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.activity__planner .checkbox-list {
+    text-align: left;
+}
+.activity__planner .checkbox {
+    width: 31px;
+    height: 31px;
+}
+.activity__planner .block__content label {
+    text-transform: uppercase;
+    color: #DB2663;
+    display: block;
+}
+.activity__planner .block__content input, .activity__planner .block__content select {
+    width: 100%;
+    text-transform: uppercase;
+}
