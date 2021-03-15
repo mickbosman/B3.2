@@ -9,6 +9,11 @@ a {
   font-family: gilroy;
 }
 
+.colors__color {
+  height: 35px;
+  width: 85%;
+}
+
 body {
   margin: 0;
   background-color: #F0F0F0;
