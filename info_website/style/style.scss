@@ -1,0 +1,140 @@
+@import 'reset';
+
+body, html {
+    scroll-behavior: smooth;
+    text-align: center;
+}
+body {
+    background-color: #F0F0F0;
+}
+@font-face {
+    src: url('./fonts/gilroy-light.otf');
+    font-family: 'gilroy';
+}
+* {
+    font-family: 'gilroy';
+}
+img {
+    max-width: 100%;
+}
+
+$primary: #63B286;
+$secondary: #DD195B;
+
+
+.btn {
+    color: #FFF !important;
+    background-color: gray;
+    min-width: 220px;
+    padding: 13px 15px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 20px;
+
+    &--primary {
+        background-color: $secondary;
+    }
+    &--secondary {
+        background-color: $primary;
+    }
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 15px;
+    line-height: 64px;
+    padding: 15px 90px;
+
+    .header__logo {
+        width: 125px;
+        object-fit: contain;
+        height: 64px;
+    }
+    .header__links {
+        a {
+            text-decoration: none;
+            color: #707070;
+            margin-right: 40px;
+        }
+
+        .link__flag {
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            margin-right: 0;
+            border: solid 2px $primary;
+        }
+    }
+}
+.info__block {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15vh;
+}
+#hero {
+    background-image: url(/assets//office.jpg);
+
+    h1 {
+        font-size: 64px;
+        color: #FFF;
+        letter-spacing: 1.2px;
+        padding-top: 25vh;
+    }
+    .btn {
+        display: block;
+        margin: 10vh auto 0 auto;
+        width: 50px;
+    }
+}
+h2 {
+    font-size: 40px;
+    color: $secondary;
+    margin-bottom: 15px;
+}
+p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+#about {
+    .block__image {
+        background-image: url(/assets/person_with_phone.jpg);
+        height: 50vh;
+        margin-top: 15vh;
+    }
+    h2 {
+        padding-top: 15vh;
+    }
+}
+#blocks {
+    padding: 0 90px;
+
+    .blocks__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+
+        .grid__block {
+            background-color: #FFF;
+            border-radius: 72px;
+            padding: 50px 0;
+            box-shadow: 6px 12px 6px 0px rgba(75,75,75,0.17);
+
+            p {
+                margin: 0 25px;
+                width: calc(100% - 50px);
+            }
+        }
+    }
+}
+.mt {
+    margin-top: 15vh;
+}
+.mt-s {
+    margin-top: 10vh;
+}
