@@ -1,119 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Robin Assists</title>
+    <link href="joshua_style.css" rel="stylesheet" />
+  </head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <img src="../img/logo.png" />
+      </div>
 
-  <title>Robin Assists</title>
-  <link href="style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <div class="sitebar">
-
-    <div class="add-person">
-      <p>Add person</p>
+      <div class="header-right">
+        <h1>Welcome person</h1>
+        <img src="../img/notification.jpeg" />
+        <a href="account.html"><img src="../img/userprofile.png" /></a>
+      </div>
     </div>
 
-    <div class="add-person-img">
-      <img src="../img/add-person.jpeg">
+    <div class="content">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-head">
+          <img src="../img/add-person.jpeg" />
+          <p>Add person</p>
+        </div>
+
+        <form>
+          <label for="search-person"></label>
+          <input type="text" placeholder="Search person" id="search-person" />
+        </form>
+      </div>
+
+      <!-- 2e groene balk (na dat je op add person op geklikt) -->
+      <div class="add-person-balk">
+        <div class="add-person2">
+          <p>Add person</p>
+        </div>
+
+        <div class="person-content">
+          <label for="">Name</label>
+          <input type="text" placeholder="Type here" id="input" />
+  
+          <label for="">Birthday</label>
+          <input type="text" placeholder="dd/mm/yyyy" id="input" />
+  
+          <label for="">Gender</label>
+          <div class="button_list button_list-3">
+            <button class="button-active">Male</button>
+            <button>Female</button>
+            <button>Neutral</button>
+          </div>
+  
+          <label for="">Language</label>
+          <div class="button_list button_list-5">
+            <button>SRB</button>
+            <button>СРБ</button>
+            <button class="button-active">EN</button>
+            <button>NL</button>
+            <button>ES</button>
+          </div>
+  
+          <label for="">Panic button</label>
+          <div class="button_list button_list-3">
+            <button class="button-active">Call</button>
+            <button>Text</button>
+            <button>Email</button>
+          </div>
+  
+          <div class="add-person-kopjes color">
+            <label for="">Color in application</label>
+            <div class="colors">
+              <div class="colors__color" style="background-color: #3c3c3c"></div>
+              <div class="colors__color" style="background-color: #0074d9"></div>
+              <div class="colors__color" style="background-color: #7edcff"></div>
+              <div class="colors__color" style="background-color: #39cccc"></div>
+              <div class="colors__color" style="background-color: #3d9970"></div>
+              <div class="colors__color" style="background-color: #2ecb40"></div>
+              <div class="colors__color" style="background-color: #08fe70"></div>
+              <div class="colors__color" style="background-color: #ffdc00"></div>
+              <div class="colors__color" style="background-color: #ff851a"></div>
+              <div class="colors__color" style="background-color: #ff4036"></div>
+              <div class="colors__color" style="background-color: #f019be"></div>
+              <div class="colors__color" style="background-color: #b01bc9"></div>
+              <div class="colors__color" style="background-color: #86134b"></div>
+              <div class="colors__color" style="background-color: #aaaaaa"></div>
+              <div class="colors__color" style="background-color: #000"></div>
+            </div>
+          </div>
+  
+          <label for="">Relation</label>  
+          <select class="select">
+            <option value="1">Personal</option>
+            <option value="2">Professional</option>
+          </select>
+  
+          <a href="person1.html">
+            <button class="save-changes">Save changes</button>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <form>
-      <label for="search-person"></label>
-      <input type="text" placeholder="Search person" id="search-person">
-    </form>
-
-  </div>
-
-  <!-- Header -->
-  <div class="header">
-
-    <div class="logo">
-  <img src="../img/logo.png">
-</div>
-
-  <div class="header-right">
-    <h1>Welcome person</h1>
-      <img src="../img/notification.jpeg">
-      <a href="account.html"><img src="../img/userprofile.png"></a>
-  </div>
-
-</div>
-
-<!-- 2e groene balk (na dat je op add person op geklikt) -->
-<div class="add-person-balk">
-  <div class="add-person2">
-  <p>Add person</p>
-</div>
-
-<div class="add-person-kopjes naam">
-<p>Name</p>
-</div>
-
-<form>
-  <input type="text" placeholder="Type here" id="input">
-</form>
-
-<div class="add-person-kopjes">
-<p>Birthday</p>
-</div>
-
-<form>
-  <input type="text" placeholder="dd/mm/yyyy" id="input">
-</form>
-
-<div class="add-person-kopjes">
-<p>Gender</p>
-</div>
-
-<button class="button ">Male</button>
-<button class="button btn-left">Female</button>
-<button class="button btn-left">Neutral</button>
-
-<div class="add-person-kopjes language">
-<p>Language</p>
-</div>
-
-<button class="button-language">SRB</button>
-<button class="button-language language2">СРБ</button>
-<button class="button-language language2">EN</button>
-<button class="button-language language2">NL</button>
-<button class="button-language language2">ES</button>
-
-<div class="add-person-kopjes panic">
-<p>Panic button</p>
-</div>
-
-<button class="button">Call</button>
-<button class="button btn-left">Text</button>
-<button class="button btn-left">Email</button>
-
-<div class="add-person-kopjes color">
-<p>Color in application</p>
-<p>Nog niet gelukt</p>
-</div>
-
-<div class="add-person-kopjes panic">
-<p>Relation</p>
-</div>
-
-<div class="select">
-  <select name="slct" id="slct">
-    <option value="1">Personal</option>
-    <option value="2">Professional</option>
-  </select>
-</div>
-
-<a href="person1.html"><button class="save-changes">Save changes</button></a>
-
-</div>
-
-</body>
+  </body>
 </html>
