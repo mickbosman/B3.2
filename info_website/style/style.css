@@ -471,7 +471,7 @@ p {
 
 #about .block__image {
   background-image: url(/assets/person_with_phone.jpg);
-  height: 50vh;
+  height: 40vh;
   margin-top: 15vh;
 }
 
@@ -504,11 +504,225 @@ p {
   width: calc(100% - 50px);
 }
 
+#blocks .btn {
+  display: block;
+  margin: 10vh auto 0 auto;
+  width: 50px;
+}
+
+.block__image--blocks {
+  background-image: url(/assets/woman_with_phone.jpg);
+  height: 25vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  width: 100%;
+}
+
 .mt {
   margin-top: 15vh;
 }
 
+.mb {
+  margin-bottom: 15vh;
+}
+
 .mt-s {
   margin-top: 10vh;
+}
+
+.mb-s {
+  margin-bottom: 10vh;
+}
+
+#how {
+  padding: 0 90px;
+}
+
+#how .image_blocks {
+  margin-top: 15vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 150px;
+}
+
+#how .image_blocks .image__block h2 {
+  margin-top: 25px;
+  text-align: left;
+}
+
+#how .image_blocks .image__block p {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+#how .image_blocks .image__block img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block__image--how {
+  background-image: url(/assets/person_with_phone.jpg);
+  height: 40vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  width: 100%;
+}
+
+#prices {
+  padding: 0 90px;
+}
+
+#prices .prices__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px;
+}
+
+#prices .prices__list .prices__price {
+  background-color: #FFF;
+  border-radius: 50px;
+  padding: 25px;
+  -webkit-box-shadow: 6px 12px 6px 0px rgba(75, 75, 75, 0.17);
+          box-shadow: 6px 12px 6px 0px rgba(75, 75, 75, 0.17);
+}
+
+#prices .prices__list .prices__price h3 {
+  color: #DD195B;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#prices .prices__list .prices__price p {
+  margin: 15px 0;
+  width: 100%;
+  font-size: 17px;
+}
+
+#prices .prices__list .prices__price .price__description {
+  text-align: left;
+  margin: 15px 0 0 0;
+  width: 100%;
+  font-size: 18px;
+  color: #DD195B;
+}
+
+#prices .prices__list .prices__price .description__info {
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#prices .prices__list .prices__price .prices__values {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-top: solid 1px #63B286;
+  border-bottom: solid 1px #63B286;
+}
+
+#prices .prices__list .prices__price .prices__values .value__price {
+  font-size: 45px;
+  color: #DD195B;
+  padding: 30px 0;
+  margin: 0;
+}
+
+#prices .prices__list .prices__price .prices__values .value__description {
+  padding: 0 10px 30px 10px;
+  margin: 0;
+  width: calc(100% - 20px);
+}
+
+#prices .prices__list .prices__price .prices__values .value__subtitle {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 28px;
+  color: #DD195B;
+}
+
+#prices .prices__list .prices__price .prices__values .value__info {
+  margin: 0;
+  color: #DD195B;
+  letter-spacing: .6;
+  line-height: 16px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#prices .prices__list .prices__price .prices__values .border-right {
+  border-right: solid 1px #63B286;
+}
+
+#partners {
+  padding: 0 90px;
+}
+
+#partners .info {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+#partners .parnters__list {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#partners .parnters__list .partner {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+#partners .parnters__list .partner img {
+  padding: 15px 75px;
+  background-color: #FFF;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 12px 6px 0px rgba(75, 75, 75, 0.17);
+          box-shadow: 6px 12px 6px 0px rgba(75, 75, 75, 0.17);
+  height: 100px;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#partners .parnters__list .partner p {
+  text-align: center;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+.footer {
+  background-color: #63B286;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 250px;
+      grid-template-columns: 1fr 250px;
+  padding: 15px 90px;
+  grid-gap: 50px;
+  text-align: left;
+}
+
+.footer p {
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+.footer .btn {
+  display: block;
+  margin: 10px 0;
+  width: calc(100% - 30px);
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
