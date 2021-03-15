@@ -44,17 +44,19 @@ img {
 }
 
 
+
 .content {
     display: grid;
     grid-template-columns: 25vw 25vw auto;
     grid-gap: 10px;
 }
 
-.content .sidebar, .content .add-person-balk {
+
+
+.sidebar, .content .add-person-balk {
     background-color: #63B286;
 }
-
-.content .sidebar-head {
+.sidebar-head {
     background-color: #FFF;
     margin-top: 15px;
     display: grid;
@@ -63,23 +65,49 @@ img {
     padding: 5px 15px;
     text-transform: uppercase;
 }
-
-
-.content .sidebar form input {
+.sidebar form input {
     margin: 15px;
     width: calc(100% - 55px);
     padding: 5px 10px;
 }
-
-.content .sidebar form input::placeholder {
+.sidebar form input::placeholder {
     color: #A3A3A3
+}
+.sidebar .sidebar-nav a {
+    text-decoration: none;
+}
+.sidebar .sidebar-nav .nav__block {
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-gap: 20px;
+    background-color: #E5E5E5;
+    border-bottom: #63B286 2px solid;
+    padding: 10px 15px;
+    color: #63B286;
+}
+.sidebar .sidebar-nav .nav__block img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.sidebar .sidebar-nav .nav__block--white {
+    background-color: #FFF;
+    color: #707070;
+}
+.sidebar .sidebar-nav .nav__block--selected {
+    background-color: #DB2663;
+    color: #FFF;
+}
+.sidebar .sidebar-nav .block__text {
+    margin: 0;
+    line-height: 45px;
+    text-transform: uppercase;
 }
 
 
 .add-person-balk, .sidebar {
     min-height: calc(100vh - 120px);
 }
-
 .add-person-balk .add-person2 {
     background-color: #FFF;
     margin-top: 15px;
@@ -87,16 +115,12 @@ img {
     text-transform: uppercase;
     color: #DB2663;
 }
-
 .add-person-balk .person-content {
     padding: 15px 35px;
 }
-
 .add-person-balk label {
     text-transform: uppercase;
 }
-
-
 .add-person-balk input, .add-person-balk select {
     margin-bottom: 15px;
     width: calc(100% - 20px);
@@ -110,7 +134,6 @@ img {
     text-transform: uppercase;
     width: 100%;
 }
-
 .add-person-balk .button_list {
     display: grid;
     margin-bottom: 15px;
@@ -131,7 +154,6 @@ img {
     color: #FFF;
     background-color: #DB2663;
 }
-
 .add-person-balk .colors__color {
     height: 35px;
     width: 100%;
@@ -139,7 +161,6 @@ img {
 .add-person-balk .colors {
     margin-bottom: 15px;
 }
-
 .add-person-balk .save-changes {
     width: 100%;
     background-color: #DB2663;
