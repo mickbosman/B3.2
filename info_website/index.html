@@ -8,20 +8,33 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <div id="videoModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Wat is robin assistant?</h2>
+            </div>
+            <div class="modal-body">
+                <video id="videoSrc" src="/assets/video.mp4" controls></video>
+            </div>
+        </div>
+      
+    </div>
     <div class="header" id="header">
         <img class="header__logo" src="assets/img/logo.png">
         <div class="header__links">
-            <a href="">What is Robin?</a>
-            <a href="">Benefits</a>
-            <a href="">How does it work?</a>
-            <a href="">Price plans</a>
+            <a href="#about">What is Robin?</a>
+            <a href="#blocks">Benefits</a>
+            <a href="#how">How does it work?</a>
+            <a href="#prices">Price plans</a>
             <a href="" class="btn btn--secondary">Sign up/login</a>
             <img class="link__flag" src="assets/dutch.webp" alt="">
         </div>
     </div>
     <div class="info__block" id="hero">
         <h1>Robin assistant service,<br>your daily assistant</h1>
-        <a href="" class="btn btn--secondary">Learn more</a>
+        <a id="openVideoModal" class="btn btn--secondary">Learn more</a>
     </div>
     <div class="info__block" id="about">
         <h2>What is Robin Service?</h2>
@@ -219,5 +232,115 @@
         <p>Robin Assistant is a new assistive software solution for people with special needs and their carers in performing everyday activities. It is used for different types of brain conditions: autism spectrum, Down syndrome, Alzheimer’s disease and various forms of dementia, and other sorts of brain injuries.</p>
         <a href="" class="btn btn--primary">Sign in/Login</a>
     </div>
+    <style>
+        /* The Modal (background) */
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        .modal h2 {
+            color: #FFF !important;
+            font-size: 32px;
+            line-height: 51px;
+            margin: 0;
+        }
+
+        /* Modal Content */
+        .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+        }
+
+        /* The Close Button */
+        .close {
+        color: white;
+        float: right;
+        font-size: 50px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        .modal-header {
+        padding: 2px 16px;
+        background-color: #63B286;
+        color: white;
+        }
+
+        .modal-body {padding: 2px 16px;}
+
+        .modal-footer {
+        padding: 2px 16px;
+        background-color: #63B286;
+        color: white;
+        }
+    </style>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("videoModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("openVideoModal");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        var video = document.getElementById("videoSrc");
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+            video.pause();
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                video.pause();
+            }
+        }
+    </script>
 </body>
 </html>
