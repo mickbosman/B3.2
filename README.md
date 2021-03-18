@@ -8,4 +8,6 @@
 ## Live demos:
 [App](https://proeve.joshua-server.nl/)<br>
 [Dashboard](https://dashboard.joshua-server.nl/)<br>
-[Information Website](https://robin.joshua-server.nl/)
+[Information Website](https://robin.joshua-server.nl/)<br>
+
+P.S. All websites on joshua-server.nl will be removed after 2 months.<br>
